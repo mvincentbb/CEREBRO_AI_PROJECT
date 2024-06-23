@@ -42,7 +42,7 @@ Make sure to adjust the version of `cudatoolkit` to match your GPU drivers if ne
 
 ## Instruction on how to train/validate your model
 
-For the Decision tree
+### For the Decision tree
 After change the "root" variable which is the folder where the dataset for training will be. 
         
 ```bash
@@ -50,20 +50,45 @@ python decision_tree_supervised.py
 ```
         
 This command will generate a file name decision_tree_suppervised_model.pkl which is our model
+#### For the CNN With Supervised Learning
+
+To run this code, have the unziped folder "data_256" in the same folder as the code ("cnn.ipynb"). And run all the boxes one after the other.
+This will :
+- preprocess the data,
+- split it into training, validation and testing sets and print the number of images in each of those sets,
+- Display an image from the dataset,
+- display one batch from the training dataset,
+- perfrom the training on the model and print, for each epoch, the loss on the training and validation sets and the accuracy on the validation set,
+- plot the accuracy on the validation set on the number of epochs,
+- plot the losses on the training and validation sets on teh number of epochs,
+- perform the testing on the testing set and return the corresponding loss, accuracy, precision, recall, and f1-score as well as plot the confusion matrix,
+- start a game where it will show you an image and you will have to compete against the model to find from which class this image is from.
+- save the model to a file "CNN256.pt"
+
+If you want to test the model on a sample data_set, please refer to the code "cnn_sample.ipynb".
+NOTE: The code has been optimized to work on Visual Code Studio.
 
     
 
 ## Instructions on how to run the pre-trained model on the provided sample test dataset
 
-To run the pretrain model  on the sample dataset named `data_256_samples` :
+To run the pretrain model  on the sample dataset named `data_256_sample` :
 
-For decision tree
+### For decision tree
 
 ```bash
 python test_dt_supervided_samples.py
 ```
 Again you have to specify the root folder which is here the sample data will be and the pretrain model
-For CNN
+### For CNN
+
+To run this code, have the unziped folder "data_256_sample" and the model file ("CNN256.pt") in the same folder as the code ("cnn_sample.ipynb"). And run all the boxes one after the other.
+This will :
+- define the model architecture
+- perform the testing on the testing set and return the corresponding loss, accuracy, precision, recall, and f1-score as well as plot the confusion matrix,
+
+If you want to train the model on a the complete data_set, please refer to the code "cnn.ipynb".
+NOTE: The code has been optimized to work on Visual Code Studio
 
 ## Description on how to obtain the Dataset from an available download link
 

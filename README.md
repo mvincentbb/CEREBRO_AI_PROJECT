@@ -60,7 +60,7 @@ python decision_tree_semi_supervised.py
 This command will generate a file name decision_tree_semi_supervised_model.pkl which is our  model
 #### For the CNN With Supervised Learning
 
-To run this code, have the unziped folder "data_256" in the same folder as the code ("cnn.ipynb"). And run all the boxes one after the other.
+To run this code, have the unziped folder "data_256" in the same folder as the code ("cnn.ipynb"). And run the whole jupyther notebook (.ipynb) code in order.
 This will :
 - preprocess the data,
 - split it into training, validation and testing sets and print the number of images in each of those sets,
@@ -74,6 +74,7 @@ This will :
 - save the model to a file "CNN256.pt"
 
 If you want to test the model on a sample data_set, please refer to the code "cnn_sample.ipynb".
+
 NOTE: The code has been optimized to work on Visual Code Studio.
 
     
@@ -97,12 +98,16 @@ python test_dt_semi_supervided_samples.py
 Again you have to specify the root folder which is here the sample data will be and the pretrain model
 ### For CNN With Supervised Learning
 
-To run this code, have the unziped folder "data_256_sample" and the model file ("CNN256.pt") in the same folder as the code ("cnn_sample.ipynb"). And run all the boxes one after the other.
+To run this code, have the unziped folder "data_256_sample" and the model file ("CNN256.pt") in the same folder as the code ("cnn_sample.py"). And run the following command in said folder:
+```bash
+python cnn_sample.py
+```
 This will :
 - define the model architecture
 - perform the testing on the testing set and return the corresponding loss, accuracy, precision, recall, and f1-score as well as plot the confusion matrix,
 
 If you want to train the model on a the complete data_set, please refer to the code "cnn.ipynb".
+
 NOTE: The code has been optimized to work on Visual Code Studio
 
 ## Description on how to obtain the Dataset from an available download link

@@ -1,4 +1,30 @@
-
+import pandas as pd
+import seaborn as sns
+import numpy as np
+from IPython import get_ipython
+from sklearn.model_selection import train_test_split
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.metrics import accuracy_score
+from sklearn.metrics import f1_score
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import classification_report
+from sklearn.metrics import ConfusionMatrixDisplay
+import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
+import PIL
+import cv2
+import os
+import pathlib
+import shutil
+from sklearn import preprocessing
+from sklearn.model_selection import StratifiedKFold, cross_val_score, GridSearchCV
+from tensorflow.keras.applications import VGG16
+from tensorflow.keras.applications.vgg16 import preprocess_input
+from tensorflow.keras.models import Model
+from sklearn.decomposition import PCA
+import random
+from sklearn.preprocessing import LabelEncoder
+import pickle
 
 root = '/mnt/sdb1/vincent/ST25/script/side_project/'
 # Base directory containing the folders of images

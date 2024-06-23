@@ -6,10 +6,11 @@
 
 We have these files
 
-- DT_With_Supervised_Learning.ipynb  : this is the Jupyter notebook for all the semi supervised decision model and all the test we have make
-- Decision_tree_semi_supervid_.ipynb : notebook for the semi supervised decision tree model
-- data_256_sample.7z is the sample data set to make the test on our pretrain model
-- 
+- [DT_With_Supervised_Learning.ipynb](https://github.com/mvincentbb/CEREBRO_AI_PROJECT/blob/main/DT_With_Supervised_Learning.ipynb)  : this is the Jupyter notebook for all the semi supervised decision model and all the test we have make
+- [Decision_tree_semi_supervid_.ipynb](https://github.com/mvincentbb/CEREBRO_AI_PROJECT/blob/main/Decision_tree_semi_supervid_.ipynb) : notebook for the semi supervised decision tree model
+- [data_256_sample.7z](https://github.com/mvincentbb/CEREBRO_AI_PROJECT/blob/main/data_256_sample.7z) is the sample data set to make the test on our pretrain model
+- [cnn.ipynb](https://github.com/mvincentbb/CEREBRO_AI_PROJECT/blob/main/cnn.ipynb) is the notebook for our CNN model
+
 
 ## Requirements to run your Python code
 
@@ -80,7 +81,7 @@ To run the pretrain model  on the sample dataset named `data_256_sample` :
 python test_dt_supervided_samples.py
 ```
 Again you have to specify the root folder which is here the sample data will be and the pretrain model
-### For CNN
+### For CNN With Supervised Learning
 
 To run this code, have the unziped folder "data_256_sample" and the model file ("CNN256.pt") in the same folder as the code ("cnn_sample.ipynb"). And run all the boxes one after the other.
 This will :

@@ -43,7 +43,7 @@ Make sure to adjust the version of `cudatoolkit` to match your GPU drivers if ne
 
 ## Instruction on how to train/validate your model
 
-### For the Decision tree
+### For the Decision tree supervised
 After change the "root" variable which is the folder where the dataset for training will be. 
         
 ```bash
@@ -51,6 +51,13 @@ python decision_tree_supervised.py
 ```
         
 This command will generate a file name decision_tree_suppervised_model.pkl which is our model
+### For the Decision tree semi-supervised
+After change the "root" variable which is the folder where the dataset for training will be. 
+        
+```bash
+python decision_tree_semi_supervised.py
+```
+This command will generate a file name decision_tree_semi_supervised_model.pkl which is our  model
 #### For the CNN With Supervised Learning
 
 To run this code, have the unziped folder "data_256" in the same folder as the code ("cnn.ipynb"). And run all the boxes one after the other.
@@ -75,10 +82,17 @@ NOTE: The code has been optimized to work on Visual Code Studio.
 
 To run the pretrain model  on the sample dataset named `data_256_sample` :
 
-### For decision tree
+### For decision tree supervised
 
 ```bash
 python test_dt_supervided_samples.py
+```
+Again you have to specify the root folder which is here the sample data will be and the pretrain model
+
+### For decision tree  semi supervised 
+
+```bash
+python test_dt_semi_supervided_samples.py
 ```
 Again you have to specify the root folder which is here the sample data will be and the pretrain model
 ### For CNN With Supervised Learning

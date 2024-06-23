@@ -8,6 +8,8 @@ We have these files
 
 - DT_With_Supervised_Learning.ipynb  : this is the Jupyter notebook for all the semi supervised decision model and all the test we have make
 - Decision_tree_semi_supervid_.ipynb : notebook for the semi supervised decision tree model
+- data_256_sample.7z is the sample data set to make the test on our pretrain model
+- 
 
 ## Requirements to run your Python code
 
@@ -65,6 +67,6 @@ For CNN
 
 ## Description on how to obtain the Dataset from an available download link
 
-The original dataset can be obtain here : 
+The original dataset can be obtain [here](http://data.csail.mit.edu/places/places365/train256places365standard.tar)
 
-The dataset that contain only the 5000 images that we use can be obtain here :
+The dataset that contain only the 5000 images that we use can be obtain [here](https://drive.google.com/file/d/1di2vovEidb91enydpqb1H5lWjDgSGwyA/view?usp=sharing)

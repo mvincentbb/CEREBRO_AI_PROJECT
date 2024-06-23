@@ -43,9 +43,9 @@ Make sure to adjust the version of `cudatoolkit` to match your GPU drivers if ne
 For the Decision tree
 After change the "root" variable which is the folder where the dataset for training will be. 
         
-        ```bash
-        python decision_tree_supervised.py
-        ```
+```bash
+python decision_tree_supervised.py
+```
         
 This command will generate a file name decision_tree_suppervised_model.pkl which is our model
 
